@@ -4,8 +4,8 @@
       {
         "builtIn": 1,
         "datasource": {
-          "type": "grafana",
-          "uid": "-- Grafana --"
+          "type": "prometheus",
+          "uid": "Prometheus"
         },
         "enable": true,
         "hide": true,
@@ -23,9 +23,10 @@
   "panels": [
     {
       "datasource": {
-        "type": "prometheus",
-        "uid": "ee93wgr6ze2o0c"
-      },
+  "type": "prometheus",
+  "uid": "Prometheus"
+}
+,
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -110,14 +111,15 @@
           "refId": "A"
         }
       ],
-      "title": "Porcentaje de transacciones exitosas",
+      "title": "Successful Transactions (%)",
       "type": "timeseries"
     },
     {
       "datasource": {
-        "type": "prometheus",
-        "uid": "ee93wgr6ze2o0c"
-      },
+  "type": "prometheus",
+  "uid": "Prometheus"
+}
+,
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -217,14 +219,14 @@
           "refId": "A"
         }
       ],
-      "title": "Porcentaje de transacciones fallidas",
+      "title": "Failed Transactions (%)",
       "type": "timeseries"
     },
     {
       "datasource": {
-        "type": "prometheus",
-        "uid": "ee93wgr6ze2o0c"
-      },
+      "type": "prometheus",
+      "uid": "Prometheus"
+    },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -281,14 +283,14 @@
           "refId": "A"
         }
       ],
-      "title": "Promedio de latencia (último minuto) [segundos]",
+      "title": "Average Latency (Last Minute) [s]",
       "type": "stat"
     },
     {
       "datasource": {
-        "type": "prometheus",
-        "uid": "ee93wgr6ze2o0c"
-      },
+      "type": "prometheus",
+      "uid": "Prometheus"
+    },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -345,14 +347,15 @@
           "refId": "A"
         }
       ],
-      "title": "p95 latency [segundos]",
+      "title": "p95 Latency [s]",
       "type": "stat"
     },
     {
       "datasource": {
-        "type": "prometheus",
-        "uid": "ee93wgr6ze2o0c"
-      },
+  "type": "prometheus",
+  "uid": "Prometheus"
+}
+,
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -405,13 +408,13 @@
           "refId": "A"
         }
       ],
-      "title": "Número total de transacciones procesadas",
+      "title": "Total Transactions Processed [last 5m]",
       "type": "stat"
     },
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ee93wgr6ze2o0c"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -460,7 +463,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ee93wgr6ze2o0c"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "successful_transactions_total + failed_transactions_total",
@@ -469,7 +472,7 @@
           "refId": "A"
         }
       ],
-      "title": "Total de transacciones",
+      "title": "Total Transactions",
       "type": "stat"
     }
   ],
